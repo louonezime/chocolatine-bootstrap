@@ -6,9 +6,9 @@ jobs:
   reposize:
     runs-on: ubuntu-latest
     steps:
-      - name: Get branch
-      - uses: actions/checkout@v3
-        run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+      - name: Check branch and Repo size
+        uses: actions/checkout@v3
+      - name: Get branch name
+        run: echo "Branch Name = ${{ github.ref }}"
       - name: Get repository size
-      - uses: actions/checkout@v3
         run: du -skh --exclude=".git"
