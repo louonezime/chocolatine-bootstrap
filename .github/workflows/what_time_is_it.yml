@@ -8,5 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get date
-        run: echo "MY_DATE=$(date +%Y%m%d%H%M)"
-        
+        run: echo "MY_DATE=$(date +'%Y-%m-%d %H:%M')"
