@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get date
-        run: echo "DATE = $(date +'%Y-%m-%d %H:%M')"
+        run: echo "Date = $(date +'%Y-%m-%d %H:%M')"
