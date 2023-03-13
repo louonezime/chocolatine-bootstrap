@@ -1,0 +1,11 @@
+name: 'repo size'
+
+on: [push]
+
+jobs:
+  reposize:
+    steps:
+      - name: Get repository size
+      - uses: actions/checkout@v3
+        run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+        run: du -skh --exclude=".git"

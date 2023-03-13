@@ -1,4 +1,3 @@
-# This is a basic workflow to help you get started with Actions
 name: 'what time is it'
 
 on: [push]
@@ -8,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get date
-        run: echo "MY_DATE=$(date +'%Y-%m-%d %H:%M')"
+        run: echo "DATE = $(date +'%Y-%m-%d %H:%M')"
