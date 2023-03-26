@@ -3,6 +3,8 @@ name: 'mirroring'
 on:
   push:
     branches: master
+  pull_request:
+    branches: master
 
 jobs:
   to_gitlab:
