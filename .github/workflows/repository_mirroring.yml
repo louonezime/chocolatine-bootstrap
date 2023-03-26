@@ -1,6 +1,8 @@
 name: 'mirroring'
 
-on: [push, pull request]
+on:
+  push:
+    branches: master
 
 jobs:
   to_gitlab:
