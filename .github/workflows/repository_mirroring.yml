@@ -4,7 +4,7 @@ on: [push, pull_request]
 
 jobs:
   to_gitlab:
-    name: "pushes all files to mirror specified"
+    name: "pushes all files to mirror specified w key"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
